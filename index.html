@@ -25,20 +25,22 @@
         <script defer src="js/script.js"></script>
     </head>
     <body class="body">
-        <h1 class="form__title">Lista zadań</h1>
+        <h1>Lista zadań</h1>
         <form class="form js-form">
+            <h2 class="form__subtitle">Dodaj nowe zadanie</h2>
             <fieldset class="form__fieldset">
-                <h2 class="form__subtitle">Dodaj nowe zadanie</h2>
                 <input
                     class="form__input js-newTask"
                     type="text"
                     placeholder="Co jest do zrobienia?"
                     autofocus
                 />
-                <button class="form__button js-button">Dodaj zadanie</button>
+                <button class="form__button--submit js-button">
+                    Dodaj zadanie
+                </button>
             </fieldset>
+            <h2 class="form__subtitle">Lista zadań</h2>
             <fieldset class="form__fieldset">
-                <h2class="form__subtitle">Lista zadań</h2>
                 <ul class="form__tasksList js-tasks"></ul>
             </fieldset>
         </form>

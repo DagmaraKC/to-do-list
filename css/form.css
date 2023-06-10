@@ -1,21 +1,59 @@
+.form__subtitle {
+    background-color: white;
+    padding: 20px;
+    margin: 2px;
+}
+
+.form__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-style: none;
+    background-color: white;
+    padding: 20px;
+    margin: 2px;
+}
+
+.form__input {
+    border-color: #eee;
+    padding: 10px;
+    flex-grow: 4;
+}
+
+.form__button--submit {
+    background-color: teal;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    margin: 0px 10px;
+    align-self: center;
+    flex-grow: 1;
+}
+
 .form__listItem--done {
     text-decoration: line-through;
 }
 
 .form__button {
-    padding: 12px;
-    border-style: none;
+    padding: 10px;
     margin: 0px 10px;
+    border-style: none;
+    align-items: flex-end;
 }
 
 .form__button--remove {
     background-image: url(../images/bin-icon.png);
     background-size: contain;
     background-position: center;
-    /* margin: 20px; */
 }
 
 .form__button--done {
     background-color: green;
     margin: 20px;
+}
+
+.form__tasksList {
+    list-style: none;
+    padding-left: 0px;
 }
