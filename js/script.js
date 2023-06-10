@@ -53,9 +53,9 @@
     <li 
     class="form__listItem ${task.done ? "form__listItem--done" : ""}"
     >
-    <button class="js-done"></button>
+    <button class="js-done form__button form__button--done"></button>
       ${task.content}
-    <button class="js-removeButton"></button>
+    <button class="js-removeButton form__button form__button--remove"></button>
     </li>
     `;
         }

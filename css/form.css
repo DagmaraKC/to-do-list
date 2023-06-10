@@ -1,3 +1,21 @@
 .form__listItem--done {
     text-decoration: line-through;
 }
+
+.form__button {
+    padding: 12px;
+    border-style: none;
+    margin: 0px 10px;
+}
+
+.form__button--remove {
+    background-image: url(../images/bin-icon.png);
+    background-size: contain;
+    background-position: center;
+    /* margin: 20px; */
+}
+
+.form__button--done {
+    background-color: green;
+    margin: 20px;
+}

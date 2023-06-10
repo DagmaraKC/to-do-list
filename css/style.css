@@ -7,3 +7,11 @@ Html {
 ::before {
     box-sizing: inherit;
 }
+
+.body {
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    max-width: 750px;
+    margin: auto;
+    background-color: #eeee;
+}
