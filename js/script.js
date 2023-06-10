@@ -34,6 +34,7 @@
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
                 toggleTaskDone(index);
+                toggleDoneButton.innerText = task.done ? "✓" : "";
             });
         });
         const removeButtons = document.querySelectorAll(".js-removeButton");
@@ -50,11 +51,12 @@
 
         for (const task of tasks) {
             htmlString += `
-    <li 
-    class="form__listItem ${task.done ? "form__listItem--done" : ""}"
+    <li class="form__listItem 
+    ${task.done ? "form__listItem--done" : ""}"
     >
-    <button class="js-done form__button form__button--done"></button>
-      ${task.content}
+    <button class="js-done form__button form__button--done">
+    ${task.done ? "✔" : ""}</button>
+    ${task.content}
     <button class="js-removeButton form__button form__button--remove"></button>
     </li>
     `;

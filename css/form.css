@@ -4,21 +4,26 @@
     margin: 2px;
 }
 
-.form__fieldset {
-    display: flex;
-    flex-wrap: wrap;
+.form__fieldset--newTask {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
     justify-content: space-between;
-    align-items: flex-start;
     border-style: none;
     background-color: white;
     padding: 20px;
     margin: 2px;
 }
 
+@media (max-width: 768px) {
+    .form__fieldset--newTask {
+        grid-template-columns: 1fr;
+    }
+}
+
 .form__input {
     border-color: #eee;
     padding: 10px;
-    flex-grow: 4;
 }
 
 .form__button--submit {
@@ -27,8 +32,13 @@
     border-style: none;
     padding: 10px;
     margin: 0px 10px;
-    align-self: center;
-    flex-grow: 1;
+}
+
+.form__fieldset--taskList {
+    border-style: none;
+    background-color: white;
+    padding: 20px;
+    margin: 2px;
 }
 
 .form__listItem--done {
@@ -39,7 +49,8 @@
     padding: 10px;
     margin: 0px 10px;
     border-style: none;
-    align-items: flex-end;
+    width: 30px;
+    height: 30px;
 }
 
 .form__button--remove {
@@ -51,9 +62,11 @@
 .form__button--done {
     background-color: green;
     margin: 20px;
+    color: white;
 }
 
 .form__tasksList {
     list-style: none;
     padding-left: 0px;
+    border-bottom: #eee 2px;
 }
