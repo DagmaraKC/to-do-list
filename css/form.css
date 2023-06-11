@@ -6,8 +6,8 @@
 
 .form__fieldset--newTask {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 3fr auto;
+    grid-gap: 20px;
     justify-content: space-between;
     border-style: none;
     background-color: white;
@@ -31,7 +31,6 @@
     color: white;
     border-style: none;
     padding: 10px;
-    margin: 0px 10px;
 }
 
 .form__fieldset--taskList {
@@ -43,6 +42,13 @@
 
 .form__listItem--done {
     text-decoration: line-through;
+}
+
+.form__listItem {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    border-bottom: solid #eee 1px;
 }
 
 .form__button {
