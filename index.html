@@ -22,6 +22,7 @@
         />
         <link href="css/style.css" rel="stylesheet" />
         <link href="css/form.css" rel="stylesheet" />
+        <link href="css/taskList.css" rel="stylesheet" />
         <script defer src="js/script.js"></script>
     </head>
     <body class="body">
@@ -39,10 +40,10 @@
                     Dodaj zadanie
                 </button>
             </fieldset>
-            <h2 class="form__subtitle">Lista zadań</h2>
-            <fieldset class="form__fieldset--taskList">
-                <ul class="form__tasksList js-tasks"></ul>
-            </fieldset>
         </form>
+        <section class="taskList">
+            <h2 class="taskList__subtitle">Lista zadań</h2>
+            <ul class="tasksList__list js-tasks"></ul>
+        </section>
     </body>
 </html>

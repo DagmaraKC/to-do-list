@@ -6,7 +6,7 @@
 
 .form__fieldset--newTask {
     display: grid;
-    grid-template-columns: 3fr auto;
+    grid-template-columns: 1fr auto;
     grid-gap: 20px;
     justify-content: space-between;
     border-style: none;
@@ -31,47 +31,4 @@
     color: white;
     border-style: none;
     padding: 10px;
-}
-
-.form__fieldset--taskList {
-    border-style: none;
-    background-color: white;
-    padding: 20px;
-}
-
-.form__listItem--done {
-    text-decoration: line-through;
-}
-
-.form__listItem {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    border-bottom: solid #eee 1px;
-}
-
-.form__button {
-    padding: 10px;
-    margin: 0px 10px;
-    border-style: none;
-    width: 30px;
-    height: 30px;
-}
-
-.form__button--remove {
-    background-image: url(../images/bin-icon.png);
-    background-size: contain;
-    background-position: center;
-}
-
-.form__button--done {
-    background-color: green;
-    margin: 20px;
-    color: white;
-}
-
-.form__tasksList {
-    list-style: none;
-    padding-left: 0px;
-    border-bottom: #eee 2px;
 }

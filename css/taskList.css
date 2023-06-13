@@ -1,0 +1,42 @@
+.taskList {
+    border-style: none;
+    background-color: white;
+    padding: 20px;
+}
+
+.taskList__listItem--done {
+    text-decoration: line-through;
+}
+
+.taskList__listItem {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    border-bottom: solid #eee 1px;
+}
+
+.taskList__button {
+    padding: 10px;
+    margin: 0px 10px;
+    border-style: none;
+    width: 30px;
+    height: 30px;
+}
+
+.taskList__button--remove {
+    background-image: url(../images/bin-icon.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.taskList__button--done {
+    background-color: green;
+    margin: 20px;
+    color: white;
+}
+
+.tasksList__list {
+    list-style: none;
+    padding-left: 0px;
+    border-bottom: #eee 2px;
+}
