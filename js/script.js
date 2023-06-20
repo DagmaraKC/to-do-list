@@ -1,21 +1,28 @@
 {
-    const tasks = [];
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            {
+                content: newTaskContent,
+            },
+        ];
 
         render();
     };
 
     const removeTask = (indexTask) => {
-        tasks.splice(indexTask, 1);
+        tasks = tasks.filter((task, index) => index !== indexTask);
+
         render();
     };
 
     const toggleTaskDone = (indexTask) => {
-        tasks[indexTask].done = !tasks[indexTask].done;
+        tasks = tasks.map((task, index) =>
+            index === indexTask ? { ...task, done: !task.done } : task
+        );
+
         render();
     };
 
@@ -36,7 +43,7 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -51,6 +58,12 @@
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
+
+    const renderButtons = () => {};
+
+    const render = () => {
+        renderTasks();
 
         bindEvents();
     };
