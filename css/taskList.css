@@ -11,8 +11,10 @@
 .taskList__listItem {
     display: grid;
     grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
     align-items: center;
     border-bottom: solid #eee 1px;
+    padding: 10px;
 }
 
 .taskList__button {
