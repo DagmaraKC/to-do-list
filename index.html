@@ -42,7 +42,15 @@
             </fieldset>
         </form>
         <section class="taskList">
-            <h2 class="taskList__subtitle">Lista zadań</h2>
+            <span class="taskList__header">
+                <h2 class="taskList__subtitle">Lista zadań</h2>
+                <button class="taskList__button--header js-buttonHide">
+                    Ukryj ukończone
+                </button>
+                <button class="taskList__button--header js-buttonMarkAsDone">
+                    Ukończ wszystkie
+                </button>
+            </span>
             <ul class="tasksList__list js-tasks"></ul>
         </section>
     </body>

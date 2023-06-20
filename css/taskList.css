@@ -42,3 +42,25 @@
     padding-left: 0px;
     border-bottom: #eee 2px;
 }
+
+.taskList__button--header {
+    color: teal;
+    background-color: white;
+    border: none;
+    transition: 0s;
+}
+
+.taskList__button--header:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.taskList__header {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+@media (max-width: 768px) {
+    .taskList__header {
+        grid-template-columns: 1fr;
+    }
+}
