@@ -1,6 +1,8 @@
 {
     let tasks = [];
 
+    let hideDoneTask = false;
+
     const addNewTask = (newTaskContent) => {
         tasks = [
             ...tasks,
@@ -26,7 +28,24 @@
         render();
     };
 
+    const markAllAsDone = () => {
+        tasks = tasks.map((task) => ({ ...task, done: true }));
+        render();
+    };
+
     const bindEvents = () => {
+        const hideDoneTaskButton = document.querySelector(".js-hide");
+
+        hideDoneTaskButton.addEventListener("click", () => {
+            hideDoneTask();
+        });
+
+        const markAllAsDoneButton = document.querySelector(".js-markAllAsDone");
+
+        markAllAsDoneButton.addEventListener("click", () => {
+            markAllAsDone();
+        });
+
         const toggleDoneButtons = document.querySelectorAll(".js-done");
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
