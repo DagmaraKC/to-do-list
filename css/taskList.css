@@ -8,6 +8,10 @@
     text-decoration: line-through;
 }
 
+.taskList__listItem--hideDone {
+    display: none;
+}
+
 .taskList__listItem {
     display: grid;
     grid-template-columns: auto 1fr auto;

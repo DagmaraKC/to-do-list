@@ -31,4 +31,10 @@
     color: white;
     border-style: none;
     padding: 10px;
+    transition: 1s;
+}
+
+.form__button--submit:hover {
+    background-color: hsl(180, 100%, 35%);
+    scale: 1.1;
 }
