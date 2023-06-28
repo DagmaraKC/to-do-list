@@ -77,7 +77,8 @@
 
         for (const task of tasks) {
             htmlString += `
-    <li class="taskList__listItem${
+    <li 
+    class="taskList__listItem${
         task.done && hideDoneTask ? "taskList__listItem--hideDone" : ""
     }">
     <button class="js-done taskList__button taskList__button--done">
@@ -85,7 +86,6 @@
     <span class="${task.done ? "taskList__listItem--done" : ""}"> 
     ${task.content}</span>
     <button class="js-removeButton taskList__button taskList__button--remove">
-    &#128465
     </button>
     </li>`;
         }
@@ -96,7 +96,7 @@
     const renderButtons = () => {
         const headerButtons = document.querySelector(".js-headerButtons");
 
-        if (!tasks.lenght) {
+        if (!tasks.length) {
             headerButtons.innerHTML = "";
             return;
         }
@@ -104,7 +104,7 @@
         headerButtons.innerHTML = `
         <button 
         class = "js-hide taskList__button--header">
-        ${hideDoneTask ? "Pokaż" : "Ukryj"}ukończone
+        ${hideDoneTask ? "Pokaż" : "Ukryj"} ukończone
         </button> 
         <button 
         class = "js-markAllAsDone taskList__button--header

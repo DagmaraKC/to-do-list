@@ -30,7 +30,8 @@
 }
 
 .taskList__button--remove {
-    background-image: url(../images/bin-icon.png);
+    background-image: url(../images/delete.png);
+    background-color: crimson;
     background-size: contain;
     background-position: center;
 }
