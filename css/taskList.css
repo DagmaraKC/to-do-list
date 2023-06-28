@@ -34,12 +34,22 @@
     background-color: crimson;
     background-size: contain;
     background-position: center;
+    transition: 1s;
+}
+
+.taskList__button--remove:hover {
+    background-color: hsl(348, 83%, 57%);
 }
 
 .taskList__button--done {
     background-color: green;
     margin: 20px;
     color: white;
+    transition: 1s;
+}
+
+.taskList__button--done:hover {
+    background-color: hsl(120, 100%, 35%);
 }
 
 .tasksList__list {
